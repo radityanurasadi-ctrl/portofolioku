@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&amp;family=Noto+Serif:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#f9f9f7",
+                        "tertiary": "#000000",
+                        "on-tertiary-fixed-variant": "#464744",
+                        "inverse-surface": "#2f3130",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#858383",
+                        "on-tertiary-fixed": "#1a1c19",
+                        "on-tertiary-container": "#838480",
+                        "secondary-container": "#d7e7d8",
+                        "secondary": "#546257",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#1c1b1b",
+                        "on-primary-fixed-variant": "#474746",
+                        "error": "#ba1a1a",
+                        "primary": "#000000",
+                        "on-secondary-container": "#5a685c",
+                        "background": "#f9f9f7",
+                        "surface": "#f9f9f7",
+                        "surface-variant": "#e2e3e1",
+                        "tertiary-container": "#1a1c19",
+                        "surface-tint": "#5f5e5e",
+                        "on-surface-variant": "#444748",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#dadad8",
+                        "tertiary-fixed": "#e3e3de",
+                        "inverse-primary": "#c8c6c5",
+                        "on-secondary-fixed-variant": "#3c4a3f",
+                        "surface-container-high": "#e8e8e6",
+                        "tertiary-fixed-dim": "#c6c7c2",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "outline-variant": "#c4c7c7",
+                        "inverse-on-surface": "#f1f1ef",
+                        "surface-container-highest": "#e2e3e1",
+                        "surface-container-low": "#f4f4f2",
+                        "on-surface": "#1a1c1b",
+                        "secondary-fixed": "#d7e7d8",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed-dim": "#bbcabd",
+                        "on-secondary-fixed": "#121e16",
+                        "on-primary-fixed": "#1c1b1b",
+                        "surface-container": "#eeeeec",
+                        "on-error": "#ffffff",
+                        "primary-fixed": "#e5e2e1",
+                        "outline": "#747878",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "on-background": "#1a1c1b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "32px",
+                        "container-max": "1280px",
+                        "margin-edge": "64px",
+                        "unit": "8px",
+                        "section-gap": "160px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Manrope"],
+                        "headline-lg": ["Noto Serif"],
+                        "body-md": ["Manrope"],
+                        "display-xl": ["Noto Serif"],
+                        "label-sm": ["Manrope"],
+                        "headline-md": ["Noto Serif"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-xl": ["80px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f9f9f7;
+            -webkit-font-smoothing: antialiased;
+        }
+        .fade-in-section {
+            opacity: 1;
+            transition: transform 1.2s cubic-bezier(0.2, 0, 0.2, 1), opacity 1.2s cubic-bezier(0.2, 0, 0.2, 1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-on-background">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl border-b border-zinc-100/50 shadow-sm shadow-zinc-900/5 transition-all duration-500 ease-out">
+<div class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+<span class="font-serif text-xl font-light tracking-[0.2em] text-zinc-900">ARSIP</span>
+<div class="flex items-center gap-8">
+<span class="material-symbols-outlined text-zinc-900 cursor-pointer" data-icon="menu">menu</span>
+</div>
+</div>
+</header>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="px-4 md:px-8 mb-20 md:mb-section-gap max-w-7xl mx-auto">
+<div class="max-w-2xl">
+<h1 class="font-headline-lg text-5xl md:text-display-xl text-primary mb-8">Mengkurasi Pengalaman Digital</h1>
+<p class="font-body-lg text-lg md:text-body-lg text-on-surface-variant mb-12 max-w-lg">
+                    Studio desain multi-disiplin yang berfokus pada visualisasi arsitektur kelas atas dan antarmuka digital yang bermakna.
+                </p>
+</div>
+</section>
+<!-- About Section (Asymmetric) -->
+<section class="px-4 md:px-8 mb-20 md:mb-section-gap max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center">
+<div class="md:col-span-5 relative">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container">
+<img alt="Raditya Nurasadi Portrait" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Potret profesional Raditya Nurasadi, seorang Web Developer Enthusiast, mengenakan jaket kulit hitam dalam suasana minimalis." src="foto radit.jpeg"/>
+</div>
+</div>
+<div class="md:col-span-6 md:col-start-7">
+<span class="font-label-sm text-on-primary-container uppercase mb-6 block">Web Developer Enthusiast</span>
+<h2 class="font-headline-md text-3xl md:text-headline-md text-primary mb-8 italic">Saya, Raditya Nurasadi.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Mahasiswa Semester 6 Prodi S1 Teknik Informatika Universitas Stekom Semarang yang berfokus pada pengembangan website, aplikasi, dan digitalisasi bisnis. Memiliki minat besar dalam mengidentifikasi masalah, menganalisis penyebab, serta menemukan dan menerapkan solusi yang efektif. Saat ini sedang mencari peluang magang untuk mengimplementasikan ilmu dan keahlian teknis yang saya miliki dalam lingkungan profesional.
+                </p>
+</div>
+</section>
+<!-- Projects Gallery -->
+<section class="px-4 md:px-8 mb-20 md:mb-section-gap max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="font-label-sm text-on-primary-container uppercase mb-2 block">Karya</span>
+<h2 class="font-headline-md text-headline-md text-primary">Portofolio</h2>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16 md:gap-y-24">
+<!-- Portfolio Baru Kolom 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[16/10] overflow-hidden bg-surface-container-low mb-6 flex items-center justify-center border-2 border-dashed border-zinc-200">
+<span class="text-zinc-400 font-label-sm uppercase tracking-widest">Tambah Foto Proyek 1</span>
+</div>
+<div class="flex justify-between items-start transition-transform duration-500 group-hover:-translate-y-2">
+<div>
+<h3 class="font-headline-md text-body-lg text-primary mb-1">Prediksi Cuaca</h3>
+<p class="font-label-sm text-on-surface-variant uppercase">Memberikan informasi mengenai cuaca berdasarkan lokasi user.</p>
+</div>
+<span class="material-symbols-outlined text-zinc-400 group-hover:text-primary transition-colors" data-icon="north_east">north_east</span>
+</div>
+</div>
+<!-- Portfolio Baru Kolom 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-[16/10] overflow-hidden bg-surface-container-low mb-6 flex items-center justify-center border-2 border-dashed border-zinc-200">
+<span class="text-zinc-400 font-label-sm uppercase tracking-widest">Tambah Foto Proyek 2</span>
+</div>
+<div class="flex justify-between items-start transition-transform duration-500 group-hover:-translate-y-2">
+<div>
+<h3 class="font-headline-md text-body-lg text-primary mb-1">Jadwal Agenda</h3>
+<p class="font-label-sm text-on-surface-variant uppercase">Memudahkan kegiatan sehari-hari.</p>
+</div>
+<span class="material-symbols-outlined text-zinc-400 group-hover:text-primary transition-colors" data-icon="north_east">north_east</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section class="px-4 md:px-8 mb-20 md:mb-section-gap max-w-7xl mx-auto text-center">
+<span class="font-label-sm text-on-primary-container uppercase mb-8 block">Semangat!</span>
+<h2 class="font-display-xl text-4xl md:text-display-xl text-primary mb-12">Mari kita definisikan ketenangan bersama.</h2>
+<div class="flex flex-col items-center gap-8">
+<a class="font-headline-md text-2xl md:text-headline-md text-primary border-b-2 border-primary pb-2 hover:text-zinc-400 hover:border-zinc-400 transition-all duration-300" href="mailto:hello@quietcurator.com">
+                    radityanurasadi@gmail.com
+                </a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-white border-t border-zinc-100 w-full py-20 px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-7xl mx-auto items-end">
+<div>
+<span class="font-serif italic text-lg text-zinc-900 mb-6 block">Ketenangan Adalah Kunci.</span>
+<p class="text-zinc-400 font-serif text-sm tracking-wide">© 2026 Raditya Nurasadi. Untuk Belajar Jadi Lebih Baik dan Berkembang.</p>
+</div>
+<div class="flex gap-8 md:justify-end">
+<a class="text-zinc-400 hover:text-zinc-900 transition-all duration-300 font-serif text-sm tracking-wide" href="#">Jurnal</a>
+<a class="text-zinc-400 hover:text-zinc-900 transition-all duration-300 font-serif text-sm tracking-wide" href="#">Instagram</a>
+<a class="text-zinc-400 hover:text-zinc-900 transition-all duration-300 font-serif text-sm tracking-wide" href="#">LinkedIn</a>
+<a class="text-zinc-400 hover:text-zinc-900 transition-all duration-300 font-serif text-sm tracking-wide" href="#">Studio</a>
+</div>
+</div>
+</footer>
+</body></html>
